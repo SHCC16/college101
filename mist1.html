@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 101</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+            color:black;
+        }
+        header {
+            background-image: url('mist_og.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            
+            
+            
+        
+        
+            color: yellow;
+            font-weight: 900;
+            font-family:'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            background: black;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            justify-content: center;
+            background: black;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+        .main {
+            flex: 3;
+        }
+        .sidebar {
+            flex: 1;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        pre {
+            background: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid rgb(8, 8, 130);
+            overflow-x: auto;
+        }
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        figcaption {
+            font-style: italic;
+            margin-top: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        footer {
+            background:black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            background-image:<img;
+        }
+        footer address {
+            font-style: normal;
+        }
+        a:link{
+            color:yellow;
+        }
+        .misc{
+            width:100%;
+        }
+        footer img{
+            width:150px;
+            height:auto;
+            
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>The one with the
+            basic html page</h1>
+
+    </nav>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <article class="main">
+        <h2>About Block-Level Elements</h2>
+        <p>Block-level elements occupy the entire width of their container and begin on a new line. Common examples include <code>&lt;div&gt;</code> and <code>&lt;p&gt;</code>.</p>
+    </article>
+</section>
+
+<section class="content">
+    <article class="main">
+        <h2 id="features">Features of Block-Level Elements</h2>
+        <ul>
+            <li>Always start on a new line.</li>
+            <li>Can contain inline elements and other block-level elements.</li>
+        </ul>
+        <figure>
+            <img  class="example" src="a-diagram-showing-the-di-4e46d3ae32e54.png" alt="Example Image" style="width:50%; image-resolution: 1000dpi;">
+            <figcaption>Figure 1: Image showing the basic structure of a block styling</figcaption>
+        </figure>
+        <pre>
+&lt;div&gt;This is a block-level container&lt;/div&gt;
+        </pre>
+        <blockquote>
+            "Block-level elements provide structure and separation in your web page."
+        </blockquote>
+    </article>
+
+    <aside class="sidebar">
+        <h3>Did You Know?</h3>
+        <p>The <code>&lt;aside&gt;</code> tag is often used for supplementary information, such as tips or related links and that i am coding this at 2:45am.</p>
+    </aside>
+</section>
+
+<section>
+    <h2>HTML Table Example</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="background-color: rgb(97, 44, 44); font-weight: bold;">Tag</th>
+                <th style="background-color: rgb(97, 44, 44); font-weight: bold;">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;div&gt;</td>
+                <td>Defines a division or a section.</td>
+            </tr>
+            <tr>
+                <td>&lt;article&gt;</td>
+                <td>Represents self-contained content.</td>
+            </tr>
+            <tr>
+                <td>&lt;footer&gt;</td>
+                <td>Defines a footer for a document.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="misc">
+    <h2>Other Important things you don't wanna miss</h2>
+    <ul>
+        <li>Single video to learn web dev from scratch</li>
+        <video width="320" height="240" controls>
+            <source src="Rick Roll.mp4" type="video/mp4">
+        </video>
+    </ul>
+</section>
+
+<footer id="contact">
+    <p>&copy; 2024 MIST WORKSHOP 101. All rights reserved.</p>
+    <img src="mist_og.png">
+    <address>
+        Contact us at <a class="link" href="https://wearemist.in/" target="_blank">wearemist.in</a>
+    </address>
+</footer>
+
+</body>
+</html>
